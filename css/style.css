@@ -1,0 +1,250 @@
+
+
+/* Index styling */
+.header{
+    background-image: url('..//image/image04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 85%;
+    position: relative;
+}
+.header::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.header img{
+    width: 250px;
+    margin: 0
+}
+.header button{
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+/* Nav-bar */
+#nav_bar{
+    background-color: #14599e;
+    font-size: 13pt;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+#nav_bar .nav-item:hover{
+    background-color: orange;
+    color: white;
+}
+#nav_bar .nav-link:active{
+    color: red;
+    background-color: skyblue;
+}
+#nav_bar .nav-link{
+    color: white;
+    position: relative;
+}
+#nav_bar .nav-link:hover{
+    color: white;
+}
+#nav_bar .nav-link::after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.2s;
+}
+#nav_bar .nav-link:hover::after{
+    width: 100%;
+    transition: width 0.2s;
+}
+#checkbox{
+    display: none;
+}
+#checkbtn{
+    display: none;
+    font-size: 23pt;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+#log-in-btn2{
+    display: none;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+/* Slider */
+.c-item{
+    height: 380px;
+}
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Footer Section */
+footer{
+    background-color: #051424;
+    color: white;
+}
+footer .nav-link{
+    border: 1px solid white;
+    background-color: white;
+    color: #051424;
+}
+footer .nav-link:hover{
+    background-color: #051424;
+    color: white;
+}
+
+#section-1{
+    background-color: #051424;
+    color: white;
+}
+#section-1 h2{
+    background-color: orange;
+    border-radius: 30px;
+    font-size: 33pt;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Quicksand, sans-serif;
+}
+.heading-style .sm-ico{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px 0;
+}
+.heading-style .sm-ico::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -105px;
+    width: 100px;
+    height: 0.5px;
+    background-color: orange;
+
+}
+.heading-style .sm-ico::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -105px;
+    width: 100px;
+    height: 0.5px;
+    background-color: orange;
+
+}
+.course-area ul{
+    height: 700px;
+    overflow-y: scroll;
+}
+.course-index-box{
+    background-color: white;
+    padding: 0px;
+}
+.course-index-box h5{
+    background-color: orange;
+    font-size: 20pt;
+    text-align: center;
+    padding: 5px;
+}
+.course-index-box ul a{
+    text-decoration: none;
+    color: black;
+}
+.course-index-box ul li{
+    list-style: none;
+}
+.course-index-box ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+.course-index-box ul{
+    font-size: 12pt;
+    font-weight: 100;
+    padding-left: 15px;
+}
+.course-index-box ul a:hover{
+    color: orange;
+    font-size: 12.3pt;
+    box-sizing: border-box;
+}
+.course-index-box ul span::before{
+    content: "\276F";
+    color: black;
+    margin-right: 10px;
+}
+
+/* Owl Coursol */
+
+
+.log-in-cont{
+    width: 70%;
+    height: 70vh;
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 2px solid rgb(255, 153, 0);
+    border-radius: 50px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 4;
+}
+
+
+
+/* Media Quries */
+@media screen and (max-width: 992px){
+    #checkbtn{
+        display: inline-block;
+    }
+    #checkbtn:hover{
+        color: rgb(9, 9, 28);
+    }
+    #nav_bar{
+        position: relative;
+    }
+    #nav_bar .nav{
+        display: block;
+        background-color: #14599e;
+        padding-bottom: 10px;
+        position: absolute;
+        left: -1000px;
+        top: 50px;
+        width: 100%;
+        z-index: 3;
+        transition: left 0.5s;
+    }
+    #checkbox:checked ~ .nav{
+        left: 0;
+        transition: left 0.4s;
+    }
+
+    #log-in-btn{
+        display: none;
+    }
+    #log-in-btn2{
+        display: block;
+    }
+    .c-item{
+        height: 280px;
+    }
+    
+}
