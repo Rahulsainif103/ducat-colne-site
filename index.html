@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Management System</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <div class="log-in-cont">
+        <h3>Log In</h3>
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-lg-3 bg-danger">s</div>
+                <div class="col-lg-3 bg-primary">f</div>
+                <div class="col-lg-3 bg-info">g</div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div> -->
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col logo-imge px-0 position-relative">
+                    <img src="image/logo.png" alt="ducat_logo" class="img-fluid mx-auto d-block pt-2 pb-2">
+                    <button class="btn btn-primary rounded-pill px-3 py-2 position-absolute end-0 bottom-0 mb-3 me-2 shadow-lg" id="log-in-btn">Log In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Nav-bar -->
+    <nav id="nav_bar">
+        <div class="container">
+            <div class="row">
+                <div class="col px-0">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <button class="btn btn-primary rounded-pill px-3 py-2 position-absolute end-0 bottom-0 mb-1 me-2 shadow-lg" id="log-in-btn2">Log In</button>
+
+                    <!-- <div class="list-item"> -->
+                        <ul class="nav nav-fill">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">Tutorials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">Registartion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">Certificate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link shadow">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active c-item">
+                            <img src="image/image01.jpg" class="d-block w-100 c-image" alt="...">
+                        </div>
+                        <div class="carousel-item c-item">
+                            <img src="image/image02.jpg" class="d-block w-100 c-image" alt="...">
+                        </div>
+                        <div class="carousel-item c-item">
+                            <img src="image/image03.jpg" class="d-block w-100 c-image" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center">
+                    <div class="heading-style">
+                        <h2 class="text-center mt-5">Become A Pro with These Courses</h2>
+                        <div class="sm-ico">
+                            <img src="image/icon.png" alt="logo" class="img-fluid">
+                        </div>
+                        <p class="lead fw-semibold">Stuck on what course to study? We offer a wide range of training courses. Active, student-centred learning and high pass rates make us a provider of choice.</p>
+                    </div>
+
+                    <!-- Owl Carousel -->
+                    <div class="sub-slider">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text text-danger">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text text-danger">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text text-danger">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text text-danger">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text text-danger">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="course-area">
+                        <div class="container">
+                            <div class="row px-xxl-4">
+                                <div class="col-md-12 px-xxl-4">
+                                    <div class="course-index-box">
+                                        <h5>Latest Tutorials</h5>
+                                        <ul id="latest-tut-list">
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                            <li><a href=""><span>13-Aug-2022 </span> : CSS Grid System</a></li>
+                                        </ul>
+                                        <div class="remo-btn text-center">
+                                            <button class="btn btn-outline-success">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Script File attched -->
+    <script src="js_file/bootstrap.bundle.js"></script>
+    <script src="js_file/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+    </script>
+</body>
+</html>

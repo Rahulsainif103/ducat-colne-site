@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav123{
+            background-color: palegreen;
+            font-size: 13pt;
+            font-weight: 500;
+        }
+        .nav-link{
+            color: black;
+        }
+        .nav-link:hover{
+            background-color: orange;
+            color: white;
+        }
+        #chkbtn{
+            display: none;
+        }
+        .fa-bars{
+            display: none;
+            font-size: 23pt;
+            padding: 10px;
+            cursor: pointer;
+        }
+       
+        @media screen and (max-width: 992px){
+            .nav{
+                display: block;
+                margin-bottom: 5px;
+            }
+            .nav-item{
+                display: block;
+            }
+            .fa-bars{
+                display: inline;
+                line-height: 50px;
+            } 
+            .fa-bars:hover{
+                background-color: orange;
+            }
+            #chkbtn:checked ~ #navbty{
+            display: none;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav123">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 bg-info p-0">
+                    <input type="checkbox" id="chkbtn">
+                    <label for="chkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    
+                    <nav id="navbty">
+                        <ul class="nav nav-fill nav-pills">
+                            <li class="nav-item "><a href="" class="nav-link shadow">Home</a></li>
+                            <li class="nav-item "><a href="" class="nav-link shadow">Courses</a></li>
+                            <li class="nav-item "><a href="" class="nav-link shadow">Tutorials</a></li>
+                            <li class="nav-item "><a href="" class="nav-link shadow">About</a></li>
+                            <li class="nav-item "><a href="" class="nav-link shadow">Contanct</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="item bg-danger"><h4>1</h4></div>
+                    <div class="item"><h4>2</h4></div>
+                    <div class="item"><h4>3</h4></div>
+                    <div class="item"><h4>4</h4></div>
+                    <div class="item"><h4>5</h4></div>
+                    <div class="item"><h4>6</h4></div>
+                    <div class="item"><h4>7</h4></div>
+                    <div class="item"><h4>8</h4></div>
+                    <div class="item"><h4>9</h4></div>
+                    <div class="item"><h4>10</h4></div>
+                    <div class="item"><h4>11</h4></div>
+                    <div class="item"><h4>12</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js_file/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+    </script>
+</body>
+</html>
