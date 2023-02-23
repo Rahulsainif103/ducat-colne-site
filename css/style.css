@@ -106,7 +106,7 @@ footer .nav-link:hover{
     background-color: #051424;
     color: white;
 }
-#section-1 h2{
+#section-1 .heading-style h2{
     background-color: orange;
     border-radius: 30px;
     font-size: 33pt;
@@ -179,10 +179,88 @@ footer .nav-link:hover{
     color: black;
     margin-right: 10px;
 }
+.remo-btn button{
+    color: orange;
+    border-color: orange;
+}
+.remo-btn button:hover{
+    color: white;
+    background-color: orange;
+    border-color: orange;
+}
+.remo-btn button:active{
+    color: white;
+    background-color: orange;
+    border-color: orange;
+}
 
 /* Owl Coursol */
 
+/* owl-nav */
+.owl-theme .owl-nav{
+    display: inline;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    margin-top: 0px;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    margin: 0px 3px;
+}
+.owl-nav button span{
+    font: caption;
+    font-size: 15pt;
+    background-color: orange;
+    padding: 0px 10px;
+}
+.owl-nav .owl-prev span{
+    border-radius: 20px 0 0 20px;
+}
+.owl-nav .owl-next span{
+    border-radius: 0 20px 20px 0;
+}
+/* owl-dots */
+.owl-theme .owl-dots{
+    margin-top: 5px;
+}
+.owl-theme .owl-dots .owl-dot span{
+    border-radius: 0px;
+    width: 35px;
+    height: 3px;
+    margin: 5px 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: orange;
+}
+/* owl-item */
+.item img{
+    position: absolute;
+    z-index: 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    /* backdrop-filter: blur(3px); */
+}
+.item .card .card-body .card-title{
+    color: black;
+    font-size: 25pt;
+}
+.item .card .card-body p{
+    color: #051424;
+}
+.item .card .card-body a{
+    color: orange;
+    border-color: orange;
+}
+.item .card .card-body a:hover{
+    color: white;
+    background-color: orange;
+}
 
+/* Log In page */
 .log-in-cont{
     width: 70%;
     height: 70vh;
@@ -207,6 +285,7 @@ footer .nav-link:hover{
     backdrop-filter: blur(10px);
     z-index: 4;
 }
+
 
 
 
